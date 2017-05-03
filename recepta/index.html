@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Recepta</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.5.0/svg.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jsbarcode/3.5.8/JsBarcode.all.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <object id="recepta-rp" type="image/svg+xml" data="recepta-rp.svg" style="float: left;">
+      Twoja przeglądarka nie obsługuje plików SVG
+    </object>
+    <form style="float: left;">
+      <fieldset>
+        <legend>Numer recepty i oddział NFZ:</legend>
+          <input id="prescription-number" type="text" maxlength="22" name="prescription-number">
+          <button id="prescription-number-generate-button" type="button">Generuj</button>
+          <button id="prescription-number-random-button" type="button">Losuj</button>
+          <button id="prescription-number-delete-button" type="reset">Usuń</button><br>
+          <select id="region-id" type="button">
+            <option value="00">Losowy oddział wojewódzkiego Narodowego Funduszu Zdrowia</option>
+            <option value="01">Dolnośląski Oddział Narodowego Funduszu Zdrowia we Wrocławiu</option>
+            <option value="02">Kujawsko-Pomorski Oddział Narodowego Funduszu Zdrowia w Bydgoszczy</option>
+            <option value="03">Lubelski Oddział Narodowego Funduszu Zdrowia w Lublinie</option>
+            <option value="04">Lubuski Oddział Narodowego Funduszu Zdrowia w Zielonej Górze</option>
+            <option value="05">Łódzki Oddział Narodowego Funduszu Zdrowia w Łodzi</option>
+            <option value="06">Małopolski Oddział Narodowego Funduszu Zdrowia w Krakowie</option>
+            <option value="07">Mazowiecki Oddział Narodowego Funduszu Zdrowia w Warszawie</option>
+            <option value="08">Opolski Oddział Narodowego Funduszu Zdrowia w Opolu</option>
+            <option value="09">Podkarpacki Oddział Narodowego Funduszu Zdrowia w Rzeszowie</option>
+            <option value="10">Podlaski Oddział Narodowego Funduszu Zdrowia w Białymstoku</option>
+            <option value="11">Pomorski Oddział Narodowego Funduszu Zdrowia w Gdańsku</option>
+            <option value="12">Śląski Oddział Narodowego Funduszu Zdrowia w Katowicach</option>
+            <option value="13">Świętokrzyski Oddział Narodowego Funduszu Zdrowia w Kielcach</option>
+            <option value="14">Warmińsko-Mazurski Oddział Narodowego Funduszu Zdrowia w Olsztynie</option>
+            <option value="15">Wielkopolski Oddział Narodowego Funduszu Zdrowia w Poznaniu</option>
+            <option value="16">Zachodniopomorski Oddział Narodowego Funduszu Zdrowia w Szczecinie</option>
+          </select><br>
+        </fieldset>
+    </form>
+  </body>
+</html>
